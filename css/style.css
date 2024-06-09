@@ -1,0 +1,75 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  display: block;
+}
+body {
+    margin: 0 auto;
+}
+.gn-wrap {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    line-height: 0;
+    overflow: hidden;
+}
+.gn {
+    position: relative;
+    margin: 0 auto;
+}
+.gn-slide {
+    position: relative;
+}
+.gn-logo {
+    position: absolute;
+    top: 4%;
+}
+.gn-txt {
+    position: absolute;
+    top: 9%;
+}
+.gn-logo1 {
+    position: absolute;
+    top: 19%;
+}
+.gn-txt1 {
+    position: absolute;
+    top: 50%;
+}
+.owl-carousel {
+    position: absolute;
+    width: 54%;
+    margin: 0 auto; 
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.owl-carousel.owl-loaded {
+  position: absolute;
+  width: 50%;
+}
+.owl-stage-outer {
+    position: relative;
+    margin: 0 auto;
+}
+
+.owl-dots{
+    position: absolute;
+    top: 103%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 13px;
+    height: 13px;
+}
+.owl-dots .owl-dot.active {
+    background-color: transparent;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #526b6f;
+}

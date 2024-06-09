@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"> 
+
+</head>
+<body>
+  <div class="gn-wrap">
+    <div class="gn">
+      <!-- swiper -->
+      <div class="gn-slide">
+        <div class="con_img_wrap">
+          <div class="slidearea">
+            <div class="swipeslide__slide swiper-container swipefade">
+              <div class="swiper-wrapper">
+                <div class="swipeslide__slide swiper-container swipefade">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/slide_01.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/slide_02.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/slide_03.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gn">
+      <img src="./img/main_200.jpg" alt="">
+      <div class="gn-logo1" data-aos="fade-up" data-aos-easing="linear">
+        <img src="./img/pro-1.png" alt="" sytle="width:100%">
+      </div>
+      <div class="gn-txt1" data-aos="fade-up" data-aos-easing="linear">
+        <img src="./img/tx-1.png" alt="" style="width:100%">
+      </div>
+    </div>
+    <div class="gn" data-aos="zoom-out" data-aos-easing="linear">
+      <img src="./img/zoom_3.jpg" alt="">
+    </div>
+    <div class="gn">
+      <img src="./img/main_3.jpg" alt="">
+      <div class="gn-logo" data-aos="fade-up" data-aos-easing="linear">
+        <img src="./img/pro-2.png" alt="">
+      </div>
+      <div class="gn-txt" data-aos="fade-up" data-aos-easing="linear">
+        <img src="./img/tx-2.png" alt="">
+      </div>
+    </div>
+    <div class="gn">
+      <img src="./img/main_4.jpg" alt="" >
+      <div class="gn-logo" data-aos="fade-up" data-aos-easing="linear">
+        <img src="./img/pro-3.png" alt="">
+      </div>
+      <div class="gn-txt" data-aos="fade-up" data-aos-easing="linear">
+        <img src="./img/tx-3.png" alt="">
+      </div>
+    </div>
+    <div class="gn">
+      <img src="./img/main_5.jpg" alt="">
+      <div class="gn-logo" data-aos="fade-up" data-aos-easing="linear">
+        <img src="./img/pro-4.png" alt="">
+      </div>
+      <div class="gn-txt" data-aos="fade-up" data-aos-easing="linear">
+        <img src="./img/tx-4.png" alt="">
+      </div>
+    </div>
+    <div class="gn">
+      <img src="./img/main_6.jpg" alt="">
+    
+      <!-- owl-carousel -->
+      <div class="owl-carousel owl-theme owl-loaded">
+        <div class="owl-stage-outer">
+          <div class="owl-stage">
+            <div class="owl-item"><img src="./img/slide_08.jpg" alt=""></div>
+            <div class="owl-item"><img src="./img/slide_07.jpg" alt=""></div>
+            <div class="owl-item"><img src="./img/slide_09.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+
+   
+
+
+        
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+        <script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1500
+			});
+		</script>
+
+		<script>
+			hljs.initHighlightingOnLoad();
+
+			$('.hero__scroll').on('click', function(e) {
+				$('html, body').animate({
+					scrollTop: $(window).height()
+				}, 1200);
+			});
+		</script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var owl = $('.owl-carousel');
+                
+                owl.owlCarousel({
+                    loop: true,
+                    items: 1, 
+                    autoplay: true,
+                    slideTransition: 'linear',
+                    autoplaySpeed: 1500,
+                    smartSpeed: 1500,
+                    center: true,
+                });    
+    
+                jQuery('.owl-carousel').trigger('play.owl.autoplay',[2000]);
+    
+            function setSpeed(){
+                jQuery('.owl-carousel').trigger('play.owl.autoplay',[4000]);
+            }
+    
+            setTimeout(setSpeed, 1000);
+                
+            });
+            
+        </script>
+        <script>
+            //swiper slider
+            var default_slide6 = new Swiper('.swiper-container.swipefade', {
+            
+                slidesPerView: 1,
+                effect: 'fade',
+            
+                  navigation: {
+                    nextEl: '.sw6_next',
+                    prevEl: '.sw6_prev',
+                  },
+            
+                loop: true,
+                speed: 500, 
+            
+                autoplay: {
+                    delay: 1500
+                },
+            });
+            </script>
+           
+
+</body>
+</html>
