@@ -40,13 +40,11 @@ body {
     position: absolute;
     top: 50%;
 }
-.owl-carousel {
-    position: absolute;
+.mySwiper {
     width: 54%;
     margin: 0 auto; 
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .owl-carousel.owl-loaded {
   position: absolute;

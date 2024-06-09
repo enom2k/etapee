@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 <body>
@@ -75,17 +74,16 @@
       </div>
     </div>
     <div class="gn">
-      <img src="./img/main_6.jpg" alt="">
+      <img src="./img/main-bg-1.jpg" alt="">
     
-      <!-- owl-carousel -->
-      <div class="owl-carousel owl-theme owl-loaded">
-        <div class="owl-stage-outer">
-          <div class="owl-stage">
-            <div class="owl-item"><img src="./img/slide_08.jpg" alt=""></div>
-            <div class="owl-item"><img src="./img/slide_07.jpg" alt=""></div>
-            <div class="owl-item"><img src="./img/slide_09.jpg" alt=""></div>
-          </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/slide_07.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./img/slide_08.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./img/slide_09.jpg" alt=""></div>
         </div>
+       
+        <div class="swiper-pagination"></div>
       </div>
     
     </div>
@@ -101,7 +99,7 @@
 		<!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
         <script>
 			AOS.init({
@@ -109,6 +107,26 @@
 				duration: 1500
 			});
 		</script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
 
 		<script>
 			hljs.initHighlightingOnLoad();
@@ -119,31 +137,7 @@
 				}, 1200);
 			});
 		</script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                var owl = $('.owl-carousel');
-                
-                owl.owlCarousel({
-                    loop: true,
-                    items: 1, 
-                    autoplay: true,
-                    slideTransition: 'linear',
-                    autoplaySpeed: 1500,
-                    smartSpeed: 1500,
-                    center: true,
-                });    
-    
-                jQuery('.owl-carousel').trigger('play.owl.autoplay',[2000]);
-    
-            function setSpeed(){
-                jQuery('.owl-carousel').trigger('play.owl.autoplay',[4000]);
-            }
-    
-            setTimeout(setSpeed, 1000);
-                
-            });
-            
-        </script>
+        
         <script>
             //swiper slider
             var default_slide6 = new Swiper('.swiper-container.swipefade', {
